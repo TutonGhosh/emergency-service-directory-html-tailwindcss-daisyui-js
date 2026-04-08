@@ -27,7 +27,7 @@
                         <img class="h-7" src="assets/heart.png" alt="">
                     </button>
                     <button class="flex items-center justify-center gap-3 bg-[#41FF6B4D] rounded-3xl p-2 px-6">
-                        <span class="text-lg font-bold">0</span>
+                        <span id="nav-coin" class="text-lg font-bold">100</span>
                         <img class="h-7" src="assets/coin.png" alt="">
                     </button>
                     <button class="flex items-center justify-center gap-3 bg-[#01b142] rounded-3xl p-2 px-6">
@@ -54,7 +54,7 @@
         <!-- Service Cards -->
         <section class="max-w-[1800px] mx-auto">
             <section class="h-auto p-5 py-10">
-            <div class="flex flex-col lg:flex-row justify-between items-stretch gap-10 w-full">
+            <div class="flex flex-col lg:flex-row lg:justify-between items-start gap-10 w-full">
             <!-- Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:w-2/3">
                 <!-- Card 1 -->
@@ -65,7 +65,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">National Emergency Number</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">National Emergency Number</h2>
                             <p class="text-lg text-[#5C5C5C]">National Emergency</p>
                         </div>
                         <div class="space-y-2">
@@ -79,7 +79,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Police Helpline</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Police Helpline</h2>
                             <p class="text-lg text-[#5C5C5C]">Police</p>
                         </div>
                         <div class="space-y-2">
@@ -108,7 +108,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Fire Service Number</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Fire Service Number</h2>
                             <p class="text-lg text-[#5C5C5C]">Fire Service</p>
                         </div>
                         <div class="space-y-2">
@@ -137,7 +137,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -152,7 +152,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Ambulance Service Number</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Ambulance Service Number</h2>
                             <p class="text-lg text-[#5C5C5C]">Health</p>
                         </div>
                         <div class="space-y-2">
@@ -166,7 +166,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -181,7 +181,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Women & Child Helpline</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Women & Child Helpline</h2>
                             <p class="text-lg text-[#5C5C5C]">Women & Child Helpline</p>
                         </div>
                         <div class="space-y-2">
@@ -195,7 +195,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -210,7 +210,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Ant-Corruption Helpline</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Ant-Corruption Helpline</h2>
                             <p class="text-lg text-[#5C5C5C]">Ant-Corruption</p>
                         </div>
                         <div class="space-y-2">
@@ -224,7 +224,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -239,7 +239,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Electricity Helpline</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Electricity Helpline</h2>
                             <p class="text-lg text-[#5C5C5C]">Electricity Outage</p>
                         </div>
                         <div class="space-y-2">
@@ -253,7 +253,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -268,7 +268,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Brac Helpline</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Brac Helpline</h2>
                             <p class="text-lg text-[#5C5C5C]">Brac</p>
                         </div>
                         <div class="space-y-2">
@@ -282,7 +282,7 @@
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span>
                             </button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -297,7 +297,7 @@
                     </div>
                     <div class="p-5 space-y-2">
                         <div>
-                            <h2 class="text-2xl font-bold">Bangladesh Railway Helpline</h2>
+                            <h2 id="card-name" class="text-2xl font-bold">Bangladesh Railway Helpline</h2>
                             <p class="text-lg text-[#5C5C5C]">Bangladesh Railway</p>
                         </div>
                         <div class="space-y-2">
@@ -310,7 +310,7 @@
                             <button onclick="copyNumber(this)" class="btn text-base text-[#5C5C5C] shadow-none w-1/3">
                                 <i id="copy-icon" class="fa-regular fa-copy"></i>
                                 <span id="copy-text">Copy</span></button>
-                            <button class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
+                            <button onclick="call(this)" class="btn text-base text-[#FFFFFF] bg-[#00A63E] border-none shadow-none w-1/2">
                                 <i class="fa-solid fa-phone"></i> 
                                 <span>Call</span>
                             </button>
@@ -325,7 +325,12 @@
                         <i class="fa-regular fa-clock"></i> 
                         <h1 class="text-xl font-medium">Call History</h1>
                     </div>
-                    <button class="btn border-none shadow-none flex items-center justify-center gap-3 bg-[#01b142] rounded-3xl p-2 px-6 text-lg font-medium text-white">Clear</button>
+                    <button onclick="clearHistory()" class="btn border-none shadow-none flex items-center justify-center gap-3 bg-[#01b142] rounded-3xl p-2 px-6 text-lg font-medium text-white">Clear</button>
+                </div>
+
+                <!-- Call History Cards -->
+                <div id="call-history-cards" class="mt-10 space-y-2">
+                    <!-- Card $ -->
                 </div>
             </div>
             </div>
