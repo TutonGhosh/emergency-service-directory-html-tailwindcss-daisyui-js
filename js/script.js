@@ -1,3 +1,4 @@
+// Refil Heart Function
 function fillHeart(heart)
 {
     const navHeart = document.getElementById('nav-heart');
@@ -17,4 +18,31 @@ function fillHeart(heart)
         heartCnt--;
         navHeart.innerText = heartCnt;
     }
+}
+
+// Number Copy Function
+function copyNumber(btn)
+{
+    const card = btn.closest('.card');
+
+    const number = card.querySelector('#emergency-number').textContent;
+    const copyText = card.querySelector('#copy-text');
+    const copyIcon = card.querySelector('#copy-icon');
+
+    navigator.clipboard.writeText(number).then (() =>
+    {
+        copyText.textContent = 'Copied!';
+        copyIcon.className = 'fa-solid fa-copy';
+
+        setTimeout ( () =>
+        {
+            copyText.textContent = 'Copy';
+            copyIcon.className = 'fa-regular fa-copy';
+        }, 1000);
+    });
+
+    const navCopy = document.getElementById('nav-copy');
+    let copyCnt = parseInt(navCopy.innerText);
+    copyCnt++;
+    navCopy.innerText = copyCnt;
 }
