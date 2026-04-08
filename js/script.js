@@ -72,11 +72,11 @@ function call(callCard)
     const div = document.createElement('div');
     div.innerHTML = 
     `<div class="bg-gray-200 rounded-lg p-2 px-5 flex items-center justify-between">
-            <div class="space-y-1">
+            <div class="space-y-1 w-2/3">
                 <h1 class="text-lg font-semibold">${name}</h1>
                 <p class="text-base text-[#5C5C5C] font-medium">${number}</p>
             </div>
-            <div>
+            <div class="w-1/3>
                 <p class="text-base font-medium">${time}</p>
             </div>
     </div>`
